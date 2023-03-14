@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        *{
+            padding: 8px;
+            margin: 8px;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            background-image: linear-gradient(black,violet);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        input{
+              box-shadow: 2px 2px 5px black;
+              background-color: rgb(229, 223, 225)
+        }
+        h1{
+            font-size:900%;
+            text-align: center;
+            color: grey;
+        }
+        </style>
+</head>
+<body>
+    <h1> Calculator</h1>
+    <div id="container">
+        <form name="calc">
+            <input id="display" name="Answer">
+             <br><br>
+             <input type="button" value="1" onclick="calc.Answer.value+='1'">
+             <input type="button" value="2" onclick="calc.Answer.value+='2'">
+             <input type="button" value="3" onclick="calc.Answer.value+='3'">
+             <input type="button" value="+" onclick="calc.Answer.value+='+'">
+             <br>
+             <input type="button" value="4" onclick="calc.Answer.value+='4'">
+             <input type="button" value="5" onclick="calc.Answer.value+='5'">
+             <input type="button" value="6" onclick="calc.Answer.value+='6'">
+             <input type="button" value="-" onclick="calc.Answer.value+='-'">
+             <br>
+             <input type="button" value="7" onclick="calc.Answer.value+='7'">
+             <input type="button" value="8" onclick="calc.Answer.value+='8'">
+             <input type="button" value="9" onclick="calc.Answer.value+='9'">
+             <input type="button" value="*" onclick="calc.Answer.value+='*'">
+             <br>
+             <input type="button" value="0" onclick="calc.Answer.value+='0'">
+             <input type="button" value="." onclick="calc.Answer.value+='.'">
+             <input type="button" value="00" onclick="calc.Answer.value+='00'">
+             <input type="button" value="/" onclick="calc.Answer.value+='/'">
+             <br>
+             <input type="button" value="clear" onclick="calc.Answer.value=' '">
+             <input type="button" value="=" onclick="calc.Answer.value=eval(calc.Answer.value)">
+        </form>
+    </div>
+</body>
+</html>
